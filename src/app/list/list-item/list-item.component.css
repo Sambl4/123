@@ -1,0 +1,60 @@
+.list-group-item {
+  margin-top: 10px;
+}
+
+.card-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-main-section {
+  width: 90%;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+}
+
+.card-title {
+  align-items: center;
+}
+
+.card-header-info {
+  display: flex;
+  align-items: center;
+}
+
+.card-header-info div {
+  margin-left: 20px;
+}
+
+.star-rate {
+  font-size: 20px;
+  color: lightgrey;
+}
+
+.my-rate {
+  color: gold;
+}
+
+.editMode {
+  margin-top: 125px;
+  border: 1px solid #f98700;
+}
+
+.modal-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgb(0, 0, 0, 0.4);
+  z-index: 1000;
+}
+
+.author {
+  border: 1px solid lightgrey;
+  margin-right: 10px;
+}

@@ -1,0 +1,62 @@
+<form [formGroup]="loginForm" *ngIf="!needRegister">
+  <div class="incorrectData" *ngIf="submitted && !isAuthenticated">User or password is not valid</div>
+  <div class="form-group">
+        <label for="email">User email*</label>
+        <input id="email" class="form-control"
+               formControlName="email" [(ngModel)]="user.email"  >
+  </div>
+  <div class="form-group">
+        <label for="pass">User password*</label>
+        <input id="pass" class="form-control"
+               formControlName="pass" [(ngModel)]="user.pass"  >
+  </div>
+
+  <div class="form-btns">
+    <button *ngIf="!needRegister" (click)="needRegister = !needRegister" class="btn btn-outline-info">Register</button>
+    <button (click)="login()" [disabled]="loginForm.invalid" class="btn btn-outline-success">LogIn</button>
+  </div>
+  <div>{{loginForm.status}}</div>
+</form>
+
+<form [formGroup]="form" *ngIf="needRegister">
+  <div class="form-group">
+        <label for="firstName">First name*</label>
+        <input id="firstName" class="form-control"
+               formControlName="firstName" [(ngModel)]="user.firstName" >
+  </div>
+  <div class="form-group">
+        <label for="lastName">Last name*</label>
+        <input id="lastName" class="form-control"
+               formControlName="lastName" [(ngModel)]="user.lastName"  >
+  </div>
+  <div class="form-group">
+        <label for="email">User email*</label>
+        <input id="email" class="form-control"
+               formControlName="email" [(ngModel)]="user.email"  >
+        <div class="incorrectData" *ngIf="emailExists && submitted">This email already exists</div>
+  </div>
+  <div class="form-group">
+        <label for="pass">User password*</label>
+        <input id="pass" class="form-control"
+               formControlName="pass" [(ngModel)]="user.pass"  >
+  </div>
+  <div class="form-group">
+        <label for="passCheking">Confirm password* (at least 4 characters)</label>
+        <input id="passCheking" class="form-control"
+               formControlName="passCheking" [(ngModel)]="user.passCheking"  >
+        <div class="incorrectData" *ngIf="form.touched && (user.pass !== user.passCheking)"> Passwords are not equal</div>
+  </div>
+  <div class="form-group">
+    <label for="role">User role</label>
+    <select  formControlName="role" [(ngModel)]="user.role" class="form-control">
+      <option *ngFor="let role of roles">{{role}}</option>
+    </select>
+  </div>
+
+  <div class="form-btns">
+    <button *ngIf="needRegister || !isRegistred" [disabled]="!(form.valid && (user.pass === user.passCheking))" (click)="registration()" class="btn btn-outline-info">Register</button>
+    <div *ngIf="isRegistred">User was registered</div>
+    <button (click)="login()" [disabled]="!isRegistred" class="btn btn-outline-success">LogIn</button>
+  </div>
+  <div>{{form.status}}</div>
+</form>

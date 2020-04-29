@@ -1,0 +1,53 @@
+.card-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-main-section {
+  width: 90%;
+}
+
+.card-header {
+  /*display: flex;*/
+  /*justify-content: space-between;*/
+  /*width: 90%;*/
+  /*height: 50px;*/
+}
+
+.card-title {
+  align-items: center;
+}
+
+.card-header-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-header-info div {
+  margin-left: 20px;
+}
+
+.description-editmode {
+  margin-top: 10px;
+  min-block-size: 30px;
+  min-inline-size: 100%;
+}
+
+/*input {
+    margin: .4rem;
+}*/
+
+.title-editmode {
+  margin-top: -10px;
+  min-width: 100%;
+}
+
+.date-editmode {
+  /*min-width: 230px;*/
+  margin-left: 5px;
+}
+
+.card-authors {
+  width: 100%;
+}
