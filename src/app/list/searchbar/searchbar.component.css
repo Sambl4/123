@@ -1,0 +1,13 @@
+.search {
+  min-width: 100px;
+  transition-property: min-width;
+  transition-duration: 0.5s;
+}
+
+.form-inline:hover .search, .search:focus, .dirty {
+  min-width: 600px;
+}
+
+.close {
+  margin-left: -50px;
+}

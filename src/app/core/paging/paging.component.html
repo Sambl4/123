@@ -1,0 +1,22 @@
+<nav aria-label="...">
+  <ul class="pagination" (click)="changeCurrentPage($event)">
+    <li class="page-item" [ngClass]="{'disabled': isFirstSet}">
+      <span class="page-link">First</span>
+    </li>
+    <li *ngIf="showFirstItem" class="page-item">
+      <span class="page-link">{{currentPage - 1}}</span>
+    </li>
+    <li class="page-item active">
+      <span class="page-link">
+        {{currentPage}}
+        <!-- <span class="sr-only">(current)</span> -->
+      </span>
+    </li>
+    <li class="page-item" *ngIf="showLastItem">
+      <span class="page-link" >{{currentPage + 1}}</span>
+    </li>
+    <li class="page-item" [ngClass]="{'disabled': isLastSet}">
+      <span class="page-link">Last</span>
+    </li>
+  </ul>
+</nav>

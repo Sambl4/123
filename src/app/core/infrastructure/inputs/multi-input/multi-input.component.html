@@ -1,0 +1,21 @@
+<div>Authors:</div>
+
+<div class="btn-group btn-group-justified" [ngClass]="{'show':isOpen}">
+        <button type="button" class="btn">
+            <span *ngFor="let option of options" class="btn btn-light author" (click)="removeOption(option)">{{option.firstName}} {{option.lastName}}</span>
+        </button>
+        <button type="button" class="btn dropdown-toggle dropdown-toggle-split" (click)="toggleOpen()">
+          <span class="sr-only">Toggle Dropdown</span>
+        </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <button
+          type="button"
+          class="dropdown-item"
+          *ngFor="let author of authors"
+          [ngClass]="{'active':author.id === id}"
+          (click)="authorsSelect(author)">
+          {{author.firstName}} {{author.lastName}}
+        </button>
+        <div class="dropdown-item" *ngIf="!authors.length">No items for select</div>
+    </div>
+</div>

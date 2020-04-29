@@ -1,0 +1,103 @@
+{
+  "users": [{
+    "id": 1533320258102,
+    "email":"user@gmail.com",
+    "firstName":"Anna1",
+    "lastName":"Borisova",
+    "pass":"1234",
+    "role":"User",
+    "token":"fake2018520233351token1anna",
+    "passCheking":"1234"
+  },
+  {
+    "id": 6093,
+    "email": "Warner@gmail.com",
+    "firstName": "Ines",
+    "lastName": "Lowe",
+    "pass": "eagf",
+    "role": "User",
+    "token": "58ebfdf7f1f558c5c86e17f6"
+  },
+  {
+    "id": 2905,
+    "email": "Morales@gmail.com",
+    "firstName": "Brock",
+    "lastName": "Beasley",
+    "pass": "idgf",
+    "role": "User",
+    "token": "58ebfdf7ec92657b493b24da"
+  },
+  {
+    "id": 3619,
+    "email": "Dale@gmail.com",
+    "firstName": "Aurelia",
+    "lastName": "Franks",
+    "pass": "consequatgf",
+    "role": "User",
+    "token": "58ebfdf772a49d09aeee10a8"
+  },
+  {
+    "id": 3117,
+    "email": "Blackburn@gmail.com",
+    "firstName": "Serena",
+    "lastName": "Henson",
+    "pass": "consecteturgf",
+    "role": "User",
+    "token": "58ebfdf7b2bab0bdb97711f4"
+  },
+  {
+    "id": 5357,
+    "email": "Sparks@gmail.com",
+    "firstName": "Carlson",
+    "lastName": "Marsh",
+    "pass": "consecteturgf",
+    "role": "User",
+    "token": "58ebfdf7279c92a711dc8918"
+  },
+  {
+    "id": 7868,
+    "email": "Trujillo@gmail.com",
+    "firstName": "Rae",
+    "lastName": "Gonzales",
+    "pass": "utgf",
+    "role": "User",
+    "token": "58ebfdf72728b878deec25aa"
+  },
+  {
+    "id": 3044,
+    "email": "Hobbs@gmail.com",
+    "firstName": "Dawson",
+    "lastName": "Bowen",
+    "pass": "sitgf",
+    "role": "User",
+    "token": "58ebfdf7cdb7d7e179910a13"
+  },
+  {
+    "id": 1461,
+    "email": "Lowe@gmail.com",
+    "firstName": "Haney",
+    "lastName": "Hill",
+    "pass": "elitgf",
+    "role": "User",
+    "token": "58ebfdf7bf15103f01c22a77"
+  },
+  {
+    "id": 4128,
+    "email": "Lolita@gmail.com",
+    "firstName": "Gilda",
+    "lastName": "Donaldson",
+    "pass": "ullamcogf",
+    "role": "User",
+    "token": "58ebfdf743bcda131c777cd1"
+  },
+  {
+    "id": 6622,
+    "email": "Olsen@gmail.com",
+    "firstName": "Colleen",
+    "lastName": "Day",
+    "pass": "ingf",
+    "role": "User",
+    "token": "58ebfdf7a36d4ad36cc693f8"
+  }
+]
+}
